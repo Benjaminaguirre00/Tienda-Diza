@@ -7,7 +7,10 @@
     box-sizing: border-box;
     font-family: roboto;
     background-color: cornflowerblue;
+    
 }
+
+    
 
 .nav{
     height: 20vh;
@@ -28,8 +31,14 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: darkblue;
     font-size: 20px;
+}
+
+a:hover{
+    background-color: aqua;
+    padding: 7px;
+
 }
 
 
@@ -38,24 +47,59 @@ a{
     width: 20vh;
 }
 
-h1{
-    font-size: 20px;
-}
 
 .img{
     height: 30vh;
     width: 30vh;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 5px solid darkblue; 
 }
 
-.main{
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
-    align-items:center; 
-    flex-direction: row;
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "f1 f2 f3";
+    gap: 25px;
+    align-content: space-around;
+    align-items: stretch;
+    justify-content: space-around;
+    justify-items: center;
+    height: 50vw;
 }
+
+.h{
+    height: auto;
+    width: 20vw;
+    border: 5px solid darkblue;
+    border-radius: 20px;
+}
+
+.f1{
+    grid-area: f1;
+}
+
+.f2{
+    grid-area: f2;
+}
+
+.f3{
+    grid-area: f3;
+    height: 25vw;
+    width: auto;
+}
+
+.gridtienda{
+    display: grid;
+    grid-template-areas: 
+    "t1 t2 t3 t4";
+    justify-items: center;
+    justify-content: space-around;
+    height: 30vw;
+    
+    
+
+}
+
 .img2{
     width: 100vh;
     height: 50vh;
@@ -67,30 +111,43 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vw;
 }
 
 
 p{
-    font-size:20px;
+    font-size:15px;
+    font-weight: 400;
+    text-align: center;
 }
 
 
-h1{
-    font-size: 40px;
-    align-items: center;
+.h1{
+    font-size: 60px;
+    text-align: center;
     font-weight:1000;
 } 
 
-h2{
-    font-size: 20xp;
+.h2{
+    font-size: 40px;
     font-weight:800;
     text-align: center;
 }
+
+.h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
 
 .footer{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    
 }
 
 .img1{
@@ -98,20 +155,17 @@ h2{
     width: 5vh;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: fit-content;
-    margin: 0 auto;
+
+.container {
+    height: 50vw;
+}
+
+.form{
+    height: 50vw;
 }
 
 
-.contenedor div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 
